@@ -73,7 +73,8 @@ class History extends Component {
   }
 
   render() {
-    const { transactions, className } = this.props
+    const { transactions, className, size: { width } } = this.props
+    console.log('width1', width)
 
     const isTransactionsLoading =
       isCollectionLoading(transactions) || transactions.hasMore

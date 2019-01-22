@@ -42,6 +42,7 @@ class HistoryChart extends Component {
 
   render() {
     const { data, height, width } = this.props
+    console.log('width2', width)
     return (
       <div className={styles.HistoryChart} ref={this.container}>
         <LineChart

@@ -17,8 +17,12 @@ class LineChart extends Component {
     this.createChart()
   }
 
-  componentDidUpdate() {
-    this.updateData()
+  componentDidUpdate(prevProps) {
+    if (prevProps.width !== this.props.width) {
+      this.updateWidth()
+    } else {
+      this.updateData()
+    }
   }
 
   getRootWidth() {
@@ -29,6 +33,25 @@ class LineChart extends Component {
     const { width } = getComputedStyle(this.root)
 
     return parseInt(width)
+  }
+
+  updateWidth() {
+    const { margin, showAxis, gradient, xScale, data } = this.props
+    const width = this.getRootWidth()
+    const innerWidth = width - margin.left - margin.right
+
+    this.x = xScale().range([0, innerWidth])
+    if (gradient) {
+      this.areaGenerator.x(d => this.x(d.x))
+      this.svg.attr('width', innerWidth)
+    }
+
+    this.lineGenerator.x(d => this.x(d.x))
+
+    console.log(this.lineGenerator)
+
+    this.setData(data, true)
+    this.updateAxis()
   }
 
   createChart() {

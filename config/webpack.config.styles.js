@@ -13,7 +13,8 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader
-          }, {
+          },
+          {
             loader: 'css-loader',
             options: {
               importLoaders: 2,
@@ -21,11 +22,11 @@ module.exports = {
               sourceMap: true,
               localIdentName: '[name]_[local]_[hash:base64:5]'
             }
-          }, {
+          },
+          {
             loader: 'stylus-loader',
             options: {
               sourceMap: true
-
             }
           }
         ]
@@ -52,20 +53,21 @@ module.exports = {
       // both options are optional
       filename: `app${production ? '.[hash].min' : ''}.css`
     }),
-    // new PostCSSAssetsPlugin({
-    //   test: /\.css$/,
-    //   plugins: [
-    //     require('css-mqpacker')({sort: sortCSSmq}),
-    //     require('postcss-discard-duplicates'),
-    //     require('postcss-discard-empty')
-    //   ].concat(
-    //     production
-    //       ? require('csswring')({
-    //           preservehacks: true,
-    //           removeallcomments: true
-    //         })
-    //       : []
-    //   )
-    // })
+    new PostCSSAssetsPlugin({
+      test: /\.css$/,
+      plugins: [
+        autoprefixer,
+        require('css-mqpacker')({ sort: sortCSSmq }),
+        require('postcss-discard-duplicates'),
+        require('postcss-discard-empty')
+      ].concat(
+        production
+          ? require('csswring')({
+              preservehacks: true,
+              removeallcomments: true
+            })
+          : []
+      )
+    })
   ]
 }

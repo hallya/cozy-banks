@@ -8202,7 +8202,12 @@ body {
 }
 .CategoriesHeader_CategoriesHeader_1kpQQ.CategoriesHeader_NoAccount_u_h8F {
   position: relative;
-  height: calc(50vh - 24px);
+  height: calc(50vh - 24px - 3rem);
+}
+@media (max-width: 48rem) {
+  .CategoriesHeader_CategoriesHeader_1kpQQ.CategoriesHeader_NoAccount_u_h8F {
+    height: calc(50vh - 24px);
+  }
 }
 .CategoriesHeader_NoAccount_container_i5ZXn {
   display: flex;

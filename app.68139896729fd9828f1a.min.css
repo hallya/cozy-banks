@@ -13252,13 +13252,17 @@ input[type='number'].ToggleRow_ToggleRow__input_scBzh.ToggleRow_ToggleRow__input
   --primaryContrastTextColor: var(--white);
 }
 .NoAccount_NoAccount_1fTH9 {
-  height: calc(40vh - 24px);
   background: var(--primaryColor);
   color: var(--primaryContrastTextColor);
   text-align: center;
   position: relative;
-  height: calc(50vh - 48px);
+  height: calc(50vh - 24px);
   min-height: 200px;
+}
+@media (max-width: 48rem) {
+  .NoAccount_NoAccount_1fTH9 {
+    height: calc(50vh - 48px);
+  }
 }
 .NoAccount_VerticalContainer_2AXC4 {
   display: flex;

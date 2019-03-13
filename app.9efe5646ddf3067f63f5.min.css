@@ -12892,7 +12892,7 @@ input[type='number'].ToggleRow_ToggleRow__input_scBzh.ToggleRow_ToggleRow__input
   --primaryContrastTextColor: var(--white);
 }
 .AccountsImporting_content_3ywog {
-  height: 213px;
+  height: 245px;
   color: var(--white);
   text-align: center;
   padding-bottom: 28px;
@@ -12900,8 +12900,12 @@ input[type='number'].ToggleRow_ToggleRow__input_scBzh.ToggleRow_ToggleRow__input
 }
 @media (max-width: 48rem) {
   .AccountsImporting_content_3ywog {
-    height: 187px;
+    height: 190px;
   }
+}
+.AccountsImporting_header_FMDCm {
+  max-width: 512px;
+  margin: 0 auto;
 }
 .AccountsImporting_progress_1pa3j {
   margin: 1rem auto;

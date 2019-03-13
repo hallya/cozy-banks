@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="32x32" x="0" y="0" width="32" height="32"></rect>
+            <g id="Rectangle-5" transform="translate(0.000000, 5.000000)">
+                <g id="path-1-link" fill="#8EE39B">
+                    <rect id="path-1" x="0" y="0" width="30" height="20.625" rx="2"></rect>
+                </g>
+                <rect id="Rectangle-path" stroke="#16B52D" stroke-width="2" x="1" y="1" width="28" height="18.625" rx="1"></rect>
+            </g>
+            <circle id="Oval-2" fill="#16B52D" fill-rule="nonzero" cx="15" cy="15.3125" r="4.6875"></circle>
+            <circle id="Oval-2-Copy" fill="#16B52D" fill-rule="nonzero" cx="6.5625" cy="15.3125" r="1.875"></circle>
+            <circle id="Oval-2-Copy-2" fill="#16B52D" fill-rule="nonzero" cx="23.4375" cy="15.3125" r="1.875"></circle>
+        </g>
+    </g>
+</svg>

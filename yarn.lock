@@ -4464,16 +4464,17 @@ cozy-authentication@1.4.2:
     react-markdown "4.0.6"
     url-polyfill "1.1.0"
 
-cozy-bar@6.15.5:
-  version "6.15.5"
-  resolved "https://registry.yarnpkg.com/cozy-bar/-/cozy-bar-6.15.5.tgz#ad8bf43067db5542806dbbb2a50f4ba8fe8d35ed"
-  integrity sha512-lGvsVs9I08PLUs41k2J2penqVkOcjxDuSBd5SbS4JIxmQWx2QYYjCp9JGLBKfwOYcqJl4C4GPY1zK3kyuEt42A==
+cozy-bar@6.16.1:
+  version "6.16.1"
+  resolved "https://registry.yarnpkg.com/cozy-bar/-/cozy-bar-6.16.1.tgz#b5594bb6642bd428cc7b08be700a68dbcc02ce31"
+  integrity sha512-Y5uWk3lCWeoePYOIKOz97Jn0esW4hG6i6KZIhjVLPpVD18uA+iEXJWhcp1slceEvtnCObiHzhdJlHJ5q4Mbp5A==
   dependencies:
     "@babel/core" "7.3.4"
     babel-core "7.0.0-bridge.0"
     babel-preset-cozy-app "1.3.2"
     cozy-client-js "0.14.2"
     cozy-device-helper "1.6.5"
+    cozy-interapp "0.4.4"
     cozy-realtime "2.0.6"
     enzyme-to-json "3.3.5"
     hammerjs "2.0.8"

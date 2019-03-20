@@ -27,7 +27,6 @@ import appIcon from 'targets/favicons/icon-banks.jpg'
 export const AUTH_PATH = 'authentication'
 
 export const onLogout = async (store, cozyClient) => {
-  setBarTheme('default')
   try {
     await stopPushNotifications()
 
@@ -161,9 +160,6 @@ const withAuth = Wrapped => {
 }
 
 const PotentiallyRevoked_ = props => {
-  if (props.revoked) {
-    setBarTheme('default')
-  }
   return props.revoked ? <Revoked {...props} /> : props.children
 }
 
